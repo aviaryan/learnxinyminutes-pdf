@@ -36,7 +36,7 @@ for i in os.listdir():
 call(
 	['pandoc'] + 
 	ls +
-	['-o build.pdf',
+	['-o learnxinyminutes.pdf',
 	'-V',
 	'geometry:margin=1in',
 	'--latex-engine=xelatex',

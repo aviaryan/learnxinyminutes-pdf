@@ -5,3 +5,4 @@
 *.directory
 
 sk-sk
+!README.md

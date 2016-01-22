@@ -7,7 +7,7 @@ Build from https://github.com/adambard/learnxinyminutes-docs
 
 ## Download
 
-* [build.pdf](build.pdf) is the all-in-one pdf
+* [build.pdf](https://github.com/aviaryan/learnxinyminutes-pdf/raw/master/build.pdf) is the all-in-one pdf
 * The individual language based pdf files are present inside the [_pdfs](_pdfs) directory
 
 

@@ -20,3 +20,4 @@ Built from https://github.com/adambard/learnxinyminutes-docs
 
 * `genpdf.py` generates the all-in-one pdf . It is written in Python 3.
 * `_genpdf.sh` generates individual pdfs.
+* They require `pandoc` and `latex`.

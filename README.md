@@ -13,7 +13,7 @@ Built from https://github.com/adambard/learnxinyminutes-docs
 
 ### Limitations
 
-* learnxinyminutes.pdf doesn't includes 2 languages; latex and markdown. This is because they caused conflicts while building the single pdf. If needed, you can always download their individual pdf's from [_pdfs](_pdfs) directory.
+* learnxinyminutes.pdf doesn't include 2 languages; latex and markdown. This is because they caused conflicts while building the pdf (you can guess why). If needed, you can always download their individual pdf's from [_pdfs](_pdfs) directory.
  
 
 ## Building

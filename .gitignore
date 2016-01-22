@@ -1,4 +1,10 @@
 *.markdown
 *.md
+*.csv
+*.erb
+*.directory
+
 _pdfs
 _xx
+sk-sk
+

@@ -1,18 +1,18 @@
 from github3 import login
 import os
 from sys import exit
+import shutil
 
 
 release = []
-
 
 def upload(file):
 	name = os.path.basename(file)
 	fdata = open(file, 'rb').read()
 	mime = 'application/pdf'
-	print(name, file)
 	asset = release.upload_asset(mime, name, fdata)
 	return asset
+
 
 
 version = 'v0.7'
@@ -31,21 +31,29 @@ for i in repo.releases():
 	print(i.tag_name, 'name = ', i.name, i.body, i.id)
 	break
 
-file = 'learnxinyminutes.pdf'
-print('Uploading ' + file)
-try:
-	upload(file)
-except:
-	print(file, 'upload failed')
-	exit(1)
+# upload main pdf
+# file = 'learnxinyminutes.pdf'
+# print('Uploading ' + file)
+# try:
+# 	upload(file)
+# except:
+# 	print(file, 'upload failed')
+# 	exit(1)
 
-
+# upload single pdf's
 for file in os.listdir('_pdfs'):
 	print('Uploading ' + file)
 	try:
 		upload('_pdfs/' + file)
 	except:
 		print('Failed', file)
+
+# upload all pdf
+shutil.make_archive('learnxinyminutes_all', 'zip', '_pdfs') # the all pdf
+try:
+	upload('learnxinyminutes_all.zip')
+except:
+	print('all zip failed')
 
 # release = repo.create_release(version)
 # print(release.edit(body='test release by API'))

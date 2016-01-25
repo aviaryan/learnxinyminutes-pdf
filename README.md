@@ -20,5 +20,5 @@
 ## Building
 
 * `genpdf.py` generates the all-in-one pdf . It is written in Python 3.
-* `_genpdf.sh` generates individual pdfs.
+* `_genpdf.sh` generates individual pdfs. Note that this takes the generated files from Python script (in _temp directory) as the input.
 * Require `pandoc` and `latex`.

@@ -7,7 +7,19 @@ from subprocess import call
 have_h1_inside = ['self', 'ruby-ecosystem', 'edn', 'zfs']
 have_heading = ['asymptotic-notation']
 dir_name = '_temp'
-
+syntax_aliases = {
+	'coffeescript': ('coffeescript', 'coffee'),
+	'common-lisp': ('common-lisp', 'commonlisp'),
+	'csharp': ('csharp', 'cs'),
+	'fsharp': ('csharp', 'fs'),
+	'haxe': ('csharp', 'haxe'),
+	'javascript': ('js', 'javascript'),
+	'less': ('less', 'css'),
+	'make': ('make', 'makefile'),
+	'ocaml': ('', 'ocaml'),
+	'sass': ('scss', 'css'),
+	'typescript': ('js', 'javascript'),
+}
 
 if not os.path.isdir(dir_name):
 	os.mkdir(dir_name)

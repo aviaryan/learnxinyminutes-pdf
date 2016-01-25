@@ -35,13 +35,13 @@ for i in os.listdir():
 		f = dir_name + '/' + i
 		ls += [f]
 		data = open(f, 'r', encoding='utf-8').read()
-		data = re.sub(r'\-\-\-[\w\W]+?\-\-\-', '', data) # remove configs
+		data = re.sub(r'\-\-\-[\w\W]+?\-\-\-', '', data, count = 1) # remove configs
 		if lang in have_h1_inside:
 			data = re.sub(r'\n# ', '\n## ', data)
 		if lang not in have_heading:
 			data = '# ' + lang.title() + '\n' + data
 		if lang in syntax_aliases.keys():
-			data = re.sub(r'\`\`\`.+', '```' + syntax_aliases[lang][1], data)
+			data = re.sub(r'\`\`\`[\w\-]+', '```' + syntax_aliases[lang][1], data)
 		open(f, 'w', encoding = 'utf-8').write(data)
 
 

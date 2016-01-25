@@ -46,9 +46,12 @@ for file in os.listdir('_pdfs'):
 		print('Failed', file)
 
 # upload all pdf
-shutil.make_archive('learnxinyminutes_all', 'zip', '_pdfs') # the all pdf
+zipname = 'learnxinyminutes_all'
+if os.path.isfile(zipname + '.zip'):
+	os.remove(zipname + '.zip')
+shutil.make_archive(zipname, 'zip', '_pdfs') # the all pdf
 try:
-	upload('learnxinyminutes_all.zip', 'application/zip')
+	upload(zipname + '.zip', 'application/zip')
 except:
 	print('all zip failed')
 

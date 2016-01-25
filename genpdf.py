@@ -29,9 +29,9 @@ ls = []
 for i in os.listdir():
 	if os.path.isfile(i) and i.endswith('.html.markdown'):
 		lang = i.replace('.html.markdown', '')
+		copyfile(i, dir_name + '/' + i) # copy the files . also used by _genpdf.sh
 		if lang == 'latex' or lang == 'markdown':
 			continue
-		copyfile(i, dir_name + '/' + i)
 		f = dir_name + '/' + i
 		ls += [f]
 		data = open(f, 'r', encoding='utf-8').read()

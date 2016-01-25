@@ -41,7 +41,7 @@ for i in os.listdir():
 		if lang not in have_heading:
 			data = '# ' + lang.title() + '\n' + data
 		if lang in syntax_aliases.keys():
-			data = re.sub(r'\`\`\`[\w\-]+', '```' + syntax_aliases[lang][1], data)
+			data = re.sub(r'\`\`\`.+', '```' + syntax_aliases[lang][1], data)
 		open(f, 'w', encoding = 'utf-8').write(data)
 
 

@@ -8,3 +8,5 @@ do
 	echo "Making PDF $langname";
 	pandoc $file -s -o _pdfs/$langname.pdf -V geometry:margin=1in --latex-engine=xelatex
 done
+
+mv _pdfs/c++.pdf _pdfs/cpp.pdf;

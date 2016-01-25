@@ -11,8 +11,8 @@ Last Updated - 25/01/16
 
 ## Download
 
-* [learnxinyminutes.pdf](https://github.com/aviaryan/learnxinyminutes-pdf/raw/master/learnxinyminutes.pdf) is the all-in-one pdf.
-* The individual pdf files are present inside the [_pdfs](_pdfs) directory.
+* [learnxinyminutes.pdf](https://github.com/aviaryan/learnxinyminutes-pdf/releases/download/v1.0.0/learnxinyminutes.pdf) is the all-in-one pdf.
+* The individual pdf files can be found in [the latest release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/latest).
 
 
 ### Limitations

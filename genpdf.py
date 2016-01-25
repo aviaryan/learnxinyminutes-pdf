@@ -7,16 +7,15 @@ from subprocess import call
 have_h1_inside = ['self', 'ruby-ecosystem', 'edn', 'zfs']
 have_heading = ['asymptotic-notation']
 dir_name = '_temp'
-syntax_aliases = {
+syntax_aliases = { # from github md to pandoc
 	'coffeescript': ('coffeescript', 'coffee'),
 	'common-lisp': ('common-lisp', 'commonlisp'),
 	'csharp': ('csharp', 'cs'),
-	'fsharp': ('csharp', 'fs'),
+	'fsharp': ('csharp', 'fsharp'),
 	'haxe': ('csharp', 'haxe'),
 	'javascript': ('js', 'javascript'),
 	'less': ('less', 'css'),
 	'make': ('make', 'makefile'),
-	'ocaml': ('', 'ocaml'),
 	'sass': ('scss', 'css'),
 	'typescript': ('js', 'javascript'),
 }
@@ -41,8 +40,9 @@ for i in os.listdir():
 			data = re.sub(r'\n# ', '\n## ', data)
 		if lang not in have_heading:
 			data = '# ' + lang.title() + '\n' + data
+		if lang in syntax_aliases.keys():
+			data = re.sub(r'\`\`\`.+', '```' + syntax_aliases[lang][1], data)
 		open(f, 'w', encoding = 'utf-8').write(data)
-		# print(data)
 
 
 call(

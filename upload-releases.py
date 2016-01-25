@@ -6,16 +6,13 @@ import shutil
 
 release = []
 
-def upload(file):
+def upload(file, mime = 'application/pdf'):
 	name = os.path.basename(file)
 	fdata = open(file, 'rb').read()
-	mime = 'application/pdf'
 	asset = release.upload_asset(mime, name, fdata)
 	return asset
 
 
-
-version = 'v0.7'
 username = 'aviaryan'
 repo = 'learnxinyminutes-pdf'
 tokentxt = open('token.txt', 'r').read()
@@ -32,13 +29,13 @@ for i in repo.releases():
 	break
 
 # upload main pdf
-# file = 'learnxinyminutes.pdf'
-# print('Uploading ' + file)
-# try:
-# 	upload(file)
-# except:
-# 	print(file, 'upload failed')
-# 	exit(1)
+file = 'learnxinyminutes.pdf'
+print('Uploading ' + file)
+try:
+	upload(file)
+except:
+	print(file, 'upload failed')
+	exit(1)
 
 # upload single pdf's
 for file in os.listdir('_pdfs'):
@@ -51,7 +48,7 @@ for file in os.listdir('_pdfs'):
 # upload all pdf
 shutil.make_archive('learnxinyminutes_all', 'zip', '_pdfs') # the all pdf
 try:
-	upload('learnxinyminutes_all.zip')
+	upload('learnxinyminutes_all.zip', 'application/zip')
 except:
 	print('all zip failed')
 

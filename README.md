@@ -2,6 +2,9 @@
 
 [Learn X in Y minutes](http://learnxinyminutes.com) as PDF. Source = https://github.com/adambard/learnxinyminutes-docs
 
+Last Updated - 25/01/16
+
+
 ## Preview
 ![Screenshot](screenshot.png)
 

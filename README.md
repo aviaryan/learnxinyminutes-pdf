@@ -11,14 +11,15 @@ Last Updated - 25/01/16
 
 ## Download
 
-* [learnxinyminutes.pdf](https://github.com/aviaryan/learnxinyminutes-pdf/releases/download/v1.1.0/learnxinyminutes.pdf) is the all-in-one pdf.
-* The individual pdf files can be found in [the latest release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/latest).
+* Downloads are hosted on [GitHub Releases](https://github.com/aviaryan/learnxinyminutes-pdf/releases/latest)
+* [learnxinyminutes.pdf](https://github.com/aviaryan/learnxinyminutes-pdf/releases/download/v1.1.0/learnxinyminutes.pdf) is the all-in-one PDF.
+* The individual PDF files can be found as [release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/latest).
 * If you want a zip of all individual PDF's, then download [learnxinyminutes_all.zip](https://github.com/aviaryan/learnxinyminutes-pdf/releases/download/v1.1.0/learnxinyminutes_all.zip).
 
 
 ### Limitations
 
-* learnxinyminutes.pdf doesn't include 2 languages; latex and markdown. This is because they caused conflicts while building the pdf (you can guess why). If needed, you can always download their individual pdf's from the [release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/latest).
+* `learnxinyminutes.pdf` doesn't include 2 languages; latex and markdown. This is because they caused conflicts while building the pdf (you can guess why). If needed, you can always download their individual pdf's from the [release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/latest).
  
 
 ## Building

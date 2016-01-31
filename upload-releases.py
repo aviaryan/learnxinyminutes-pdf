@@ -3,6 +3,7 @@ import os
 from sys import exit
 import shutil
 
+# uploads on the latest release . So create a relase first, then run this script
 
 release = []
 

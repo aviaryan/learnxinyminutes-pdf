@@ -38,16 +38,20 @@ except:
 	print(file, 'upload failed')
 	exit(1)
 
+count = 0
 # upload single pdf's
 for file in os.listdir('_pdfs'):
 	print('Uploading ' + file)
 	try:
 		upload('_pdfs/' + file)
+		count += 1
 	except:
 		print('Failed', file)
+print('Uploaded', count, 'single pdfs')
 
 # upload all pdf
 zipname = 'learnxinyminutes_all'
+print('Uploading ' + zipname)
 if os.path.isfile(zipname + '.zip'):
 	os.remove(zipname + '.zip')
 shutil.make_archive(zipname, 'zip', '_pdfs') # the all pdf

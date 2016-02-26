@@ -22,6 +22,8 @@
 
 ### Building
 
-* `genpdf.py` generates the all-in-one pdf . It is written in Python 3.
-* `_genpdf.sh` generates individual pdfs. Note that this takes the generated files from Python script (in _temp directory) as the input.
-* Requires `pandoc` and `latex` installed.
+1. Run `genpdf.py` (Python 3). It generates the all-in-one pdf and the parsed markdown files. 
+2. Run `_genpdf.sh`. It generates the individual pdf-s. Note that this takes the generated files from Python script (in _temp directory) as the input.
+3. To update on GitHub, first create a new release from the web UI. Then run `upload-releases.py`.
+
+\* Requires `pandoc` and `latex` installed.

@@ -4,7 +4,7 @@
 
 
 ## Preview
-![Screenshot](screenshot.png)
+![Screenshot](http://i.imgur.com/MJc4NrS.png)
 
 
 ## Download

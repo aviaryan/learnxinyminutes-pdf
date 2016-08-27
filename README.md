@@ -4,7 +4,7 @@
 
 
 ## Preview
-![Screenshot](https://cloud.githubusercontent.com/assets/4047597/18028112/2ff9060c-6c93-11e6-8bb5-beb1e92ee17f.png)
+![Screenshot](https://cloud.githubusercontent.com/assets/4047597/18028175/063ccd6a-6c95-11e6-9ebf-fba11c516afc.png)
 
 
 ## Download

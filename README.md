@@ -18,12 +18,17 @@
 ### Limitations
 
 * `learnxinyminutes.pdf` doesn't include 2 languages; latex and markdown. This is because they caused conflicts while building the pdf (you can guess why). If needed, you can always download their individual pdf's from the [release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/tag/v2016.08.27).
- 
 
-### Building
 
-1. Run `genpdf.py` (Python 3). It generates the all-in-one pdf and the parsed markdown files. 
+### Build Requirements
+
+* Python 3
+* Pandoc
+* Latex
+
+
+### Build Instructions
+
+1. Run `genpdf.py`. It generates the all-in-one pdf and the parsed markdown files. 
 2. Run `_genpdf.sh`. It generates the individual pdf-s. Note that this takes the generated files from Python script (in _temp directory) as the input.
 3. To update on GitHub, first create a new release from the web UI. Then run `upload-releases.py`.
-
-\* Requires `pandoc` and `latex` installed.

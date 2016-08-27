@@ -34,8 +34,8 @@ file = 'learnxinyminutes.pdf'
 print('Uploading ' + file)
 try:
 	upload(file)
-except:
-	print(file, 'upload failed')
+except Exception as e:
+	print(file, 'upload failed %s' % str(e))
 	exit(1)
 
 count = 0

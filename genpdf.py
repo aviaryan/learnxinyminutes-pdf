@@ -56,4 +56,4 @@ call(
 	'--latex-engine=xelatex',
 	# '--template=template.tex',
 	]
-	)
+)

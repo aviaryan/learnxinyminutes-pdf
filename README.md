@@ -1,23 +1,23 @@
 # Learn X in Y minutes - PDF
 
-(**Updated** 26/2/16) [Learn X in Y minutes](http://learnxinyminutes.com) as PDF. Source = https://github.com/adambard/learnxinyminutes-docs
+(**Updated** 27/8/16) [Learn X in Y minutes](http://learnxinyminutes.com) as PDF. Source = https://github.com/adambard/learnxinyminutes-docs
 
 
 ## Preview
-![Screenshot](http://i.imgur.com/MJc4NrS.png)
+![Screenshot](https://cloud.githubusercontent.com/assets/4047597/18028112/2ff9060c-6c93-11e6-8bb5-beb1e92ee17f.png)
 
 
 ## Download
 
-* Downloads are hosted on [GitHub Releases](https://github.com/aviaryan/learnxinyminutes-pdf/releases/tag/v2016.02.26)
-* [learnxinyminutes.pdf](https://github.com/aviaryan/learnxinyminutes-pdf/releases/download/v2016.02.26/learnxinyminutes.pdf) is the all-in-one PDF.
-* The individual PDF files can be found as [release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/tag/v2016.02.26).
-* If you want a zip of all individual PDF's, then download [learnxinyminutes_all.zip](https://github.com/aviaryan/learnxinyminutes-pdf/releases/download/v2016.02.26/learnxinyminutes_all.zip).
+* Downloads are hosted on [GitHub Releases](https://github.com/aviaryan/learnxinyminutes-pdf/releases/tag/v2016.08.27)
+* [learnxinyminutes.pdf](https://github.com/aviaryan/learnxinyminutes-pdf/releases/download/v2016.08.27/learnxinyminutes.pdf) is the all-in-one PDF.
+* The individual PDF files can be found as [release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/tag/v2016.08.27).
+* If you want a zip of all individual PDF's, then download [learnxinyminutes_all.zip](https://github.com/aviaryan/learnxinyminutes-pdf/releases/download/v2016.08.27/learnxinyminutes_all.zip).
 
 
 ### Limitations
 
-* `learnxinyminutes.pdf` doesn't include 2 languages; latex and markdown. This is because they caused conflicts while building the pdf (you can guess why). If needed, you can always download their individual pdf's from the [release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/tag/v2016.02.26).
+* `learnxinyminutes.pdf` doesn't include 2 languages; latex and markdown. This is because they caused conflicts while building the pdf (you can guess why). If needed, you can always download their individual pdf's from the [release attachments](https://github.com/aviaryan/learnxinyminutes-pdf/releases/tag/v2016.08.27).
  
 
 ### Building

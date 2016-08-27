@@ -4,7 +4,7 @@ from shutil import copyfile
 from subprocess import call
 
 
-have_h1_inside = ['self', 'ruby-ecosystem', 'edn', 'zfs']
+have_h1_inside = ['self', 'ruby-ecosystem', 'edn', 'zfs', 'dynamic-programming', 'binary-search', 'php-composer']
 have_heading = ['asymptotic-notation']
 dir_name = '_temp'
 syntax_aliases = { # from github md to pandoc
@@ -44,6 +44,8 @@ for i in os.listdir():
 			data = re.sub(r'\`\`\`.+', '```' + syntax_aliases[lang][1], data)
 		open(f, 'w', encoding = 'utf-8').write(data)
 
+
+ls = sorted(ls)
 
 call(
 	['pandoc'] + 

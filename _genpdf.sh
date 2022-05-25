@@ -6,7 +6,7 @@ do
 	base=$(basename $file);
 	langname=${base//\.html\.markdown/};
 	echo "Making PDF $langname";
-	pandoc $file -s -o _pdfs/$langname.pdf -V geometry:margin=1in --latex-engine=xelatex
+	pandoc $file -s -o _pdfs/$langname.pdf -V geometry:margin=1in --pdf-engine=xelatex
 done
 
 mv _pdfs/c++.pdf _pdfs/cpp.pdf;

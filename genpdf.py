@@ -61,7 +61,7 @@ for i in os.listdir():
         # copy the files . also used by _genpdf.sh
         copyfile(i, DIR_NAME + '/' + i)
         # Don't build them as they create problems
-        if lang == 'latex' or lang == 'markdown':
+        if lang in ['latex', 'markdown']:
             continue
         f = DIR_NAME + '/' + i
         ls += [f]

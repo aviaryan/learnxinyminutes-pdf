@@ -77,7 +77,7 @@ call(
 		'learnxinyminutes.pdf',
 		'-V',
 		'geometry:margin=1in',
-		'--latex-engine=xelatex',
+		'--pdf-engine=xelatex',
 		# '--template=template.tex',
 	]
 )

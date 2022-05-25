@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
 
+"""Script to generate a synoptic .pdf about the entries of learnxinyminutes.
+
+For proper execution, this script depends on a working installation of
++ Python (e.g., https://www.python.org/)
++ Pandoc (e.g., https://pandoc.org/)
++ XeLaTeX (e.g., https://en.wikipedia.org/wiki/XeTeX)
+
+Copy the markdown files of your interest into this project's folder, and
+run
+
+python genpdf.py
+
+to build file learnxinyminutes.pdf."""
+
 import os
 import re
 from shutil import copyfile

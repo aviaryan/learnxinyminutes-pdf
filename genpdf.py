@@ -65,8 +65,14 @@ for i in os.listdir():
             continue
         f = DIR_NAME + '/' + i
         ls += [f]
+
         # Process file
-        data = open(f, 'r', encoding='utf-8').read()
+        try:
+            with open(f, mode='r', encoding='utf-8') as source:
+                data = source.read()
+        except OSError:
+            print(f"Error reading from file {f}.")
+
         # remove configs
         data = re.sub(r'\-\-\-[\w\W]+?\-\-\-', '', data, count=1)
         # remove h1 headings in md file
@@ -78,8 +84,13 @@ for i in os.listdir():
         # convert syntax keyword to pandoc
         if lang in syntax_aliases.keys():
             data = re.sub(r'\`\`\`.+', '```' + syntax_aliases[lang][1], data)
+
         # Save file
-        open(f, 'w', encoding='utf-8').write(data)
+        try:
+            with open(f, mode='w', encoding='utf-8') as newfile:
+                newfile.write(data)
+        except OSError:
+            print(f"Error writing into file {f}.")
 
 ls = sorted(ls)
 
